@@ -72,10 +72,10 @@ const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkUp = images.map(({preview, original, description}) => {
   return `<li class="gallery-item">
-	<a class="gallery-link" href="large-image.jpg">
+	<a class="gallery-link" href="${original}">
 		<img 
-		  class="gallery-image" 
-		  src="small-image.jpg" 
+		  class="${preview}" 
+		  src="${description}" 
 		/>
 	</a>
 </li>`;
@@ -95,54 +95,3 @@ const galleryMarkUp = images.map(({preview, original, description}) => {
 
 
 
-
-
-
-
-
-
- 
-   /* const container = document.querySelector(".gallery");
-
- function generateImage(images) { 
-  return images
- .map(image => {
-  return `
-<li>
-            <a class="gallery-link" href="image.original.jpg">
-                <img
-                  class="gallery-image"
-                  src="${image.preview}"
-                  data-source="${image.original}"
-                  alt="${image.description}"
-                />
-              </a>
-        </li>
-`;
- })
-
- .join("");
-
-}
-
-container.insertAdjacentHTML("beforeend", generateImage(images));
-
-container. addEventListener("click", picktureClick);
-
-function picktureClick(event) {
-  event.preventDefault();
-  const target = event.target;
-
-  if (target.classList.contains('gallery-image')) {
-    const largeImageSrc = target.dataset.source;
-
-    
-    const instance = basicLightbox.create(`
-      <img src="${largeImageSrc}" width="800" height="600">
-    `);
-    
-    instance.show();
-  }
-}
-
- */
