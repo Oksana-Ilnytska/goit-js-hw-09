@@ -46,3 +46,53 @@
       display: block;
     }
   
+
+    .feedback-form {
+      width: 100%;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .feedback-form label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+    
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 14px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    .feedback-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    
+    .feedback-form button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .feedback-form button:hover {
+      background-color: #004999;
+    }
